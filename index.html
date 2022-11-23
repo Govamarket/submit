@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="form" method="POST" action="" onsubmit="submitForm(event)">
+
+        <div id="box">
+            <h2>Login</h2>
+            <div>
+                <input type="text" name="username" id="username" placeholder="Name">
+                <p id="error1">Name must be atleast more than 3</p>
+                <p id="errorp">Name required</p>
+            </div>
+
+            <div>
+                <input type="text" name="email" id="email" placeholder="email" value="" onclick="validation ()">
+                <p id="error2">Email required</p>
+                <p id="error8">Invalid input</p>
+                </span>
+            </div>
+
+            <div>
+                <input type="password" name="passwordInput" id="psw1" placeholder="Enter password">
+            
+                    <p id="error3">password required</p>
+                    <p id="er">password must be greater than 5</p>
+                 
+                </span>
+            </div>
+            <div>
+
+                <input type="password" name="confirmInput" id="psw2" placeholder="Enter password">
+                <span id="error">
+                    <p id="error4">Password required</p>
+                    <p id="er1">password must be greater than 5</p>
+                    <p id="mt">Password does not match</p>
+                </span>
+
+            </div>
+        </div>
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
